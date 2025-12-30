@@ -1,0 +1,508 @@
+/**
+    登录，注册，修改密码界面
+*/
+#frame_background{
+border-image:url(:/pic/background-1.png);
+}
+
+#frame_login{background-color:#ffffff}
+
+#frame_login_background{background-color:#ffffff}
+
+#frame_pic{
+    border-image:url(:/pic/1.png);
+}
+
+#frame_user_name,#frame_pwd,#frame_pwd_1{
+    border: 1px solid #696969;
+    border-radius: 5px;
+}
+
+QLineEdit{
+    border: none;
+}
+
+/**
+    按钮样式
+*/
+
+#btn_log{
+    color:#80712d;
+    border: none;
+    background-color:#ffde49;
+    border-radius: 5px;
+}
+
+#btn_log:hover{
+    color:#80712d;
+    border: none;
+    background-color:#fdd72d;
+    border-radius: 5px;
+}
+
+#btn_log:pressed{
+    color:#80712d;
+    border: none;
+    background-color:#ffde49;
+    border-radius: 5px;
+}
+
+#enroll_btn{
+    color:#80712d;
+    border: none;
+    background-color:#ffde49;
+    border-radius: 5px;
+}
+
+#enroll_btn:hover{
+    color:#80712d;
+    border: none;
+    background-color:#fdd72d;
+    border-radius: 5px;
+}
+
+#enroll_btn:pressed{
+    color:#80712d;
+    border: none;
+    background-color:#ffde49;
+    border-radius: 5px;
+}
+
+#btn_retToLogin{
+    color:#80712d;
+    border: none;
+    background-color:#ffde49;
+    border-radius: 5px;
+}
+
+#btn_retToLogin:hover{
+    color:#80712d;
+    border: none;
+    background-color:#fdd72d;
+    border-radius: 5px;
+}
+
+#btn_retToLogin:pressed{
+    color:#80712d;
+    border: none;
+    background-color:#ffde49;
+    border-radius: 5px;
+}
+
+#btn_touserspace{
+    color:#80712d;
+    border: none;
+    background-color:#ffde49;
+    border-radius: 5px;
+}
+
+#btn_touserspace:hover{
+    color:#80712d;
+    border: none;
+    background-color:#fdd72d;
+    border-radius: 5px;
+}
+
+#btn_touserspace:pressed{
+    color:#80712d;
+    border: none;
+    background-color:#ffde49;
+    border-radius: 5px;
+}
+
+#btn_confirm{
+    color:#80712d;
+    border: none;
+    background-color:#ffde49;
+    border-radius: 5px;
+}
+
+#btn_confirm:hover{
+    color:#80712d;
+    border: none;
+    background-color:#fdd72d;
+    border-radius: 5px;
+}
+
+#btn_confirm:pressed{
+    color:#80712d;
+    border: none;
+    background-color:#ffde49;
+    border-radius: 5px;
+}
+
+#btn_retTologin{
+    color:#80712d;
+    border: none;
+    background-color:#ffde49;
+    border-radius: 5px;
+}
+
+#btn_retTologin:hover{
+    color:#80712d;
+    border: none;
+    background-color:#fdd72d;
+    border-radius: 5px;
+}
+
+#btn_retTologin:pressed{
+    color:#80712d;
+    border: none;
+    background-color:#ffde49;
+    border-radius: 5px;
+}
+
+#label_userspace,#label_1,#label_2,#label_login,#label_enroll,#label_changePwd,#label_newwordpage
+{
+    color:#d7b105;
+}
+
+#label_user_name
+{
+    border-image:url(:/pic/user_name.png);
+}
+
+#label_pwd,#label_con_pwd
+{
+    border-image:url(:/pic/pwd.png);
+}
+
+/**
+    圆形按钮样式
+*/
+#btn_toStudyCenter{
+    color:#80712d;
+    background-color:#ffde49;
+    border:2px groove gray;
+    border-radius:50px;
+    padding:2px 4px;
+    border-style: outset;
+}
+
+#btn_toStudyCenter:hover{
+    background-color:#fdd72d;
+    color:#80712d;
+}
+
+#btn_toStudyCenter:pressed{
+    color:#80712d;
+    background-color:#ffde49;
+    border-style: inset;
+}
+
+#btn_toChangepwd{
+    color:#80712d;
+    background-color:#ffde49;
+    border:2px groove gray;
+    border-radius:50px;
+    padding:2px 4px;
+    border-style: outset;
+}
+
+#btn_toChangepwd:hover{
+    background-color:#fdd72d;
+    color:#80712d;
+}
+
+#btn_toChangepwd:pressed{
+    color:#80712d;
+    background-color:#ffde49;
+    border-style: inset;
+}
+
+/*个人学习中心界面*/
+#box_choosebox {
+    border: 1px solid gray;   /* 边框 */
+    border-radius:5px;   /* 圆角 */
+    padding: 0px 0px 0px 10px; /* 上内边距、右内边距、下内边距、左内边距 */
+    background-color:#ffde49;
+}
+
+/* 下拉后，整个下拉窗体样式 */
+#box_choosebox QAbstractItemView {
+    outline: 0px solid gray;   /* 选定项的虚框 */
+    border-radius:10px;   /* 圆角 */
+    padding-top:10px;    /*上下都留10px，是因为选中项是矩形，如果不留，移动到第一项和最后一项会变为直角，不好看*/
+    padding-bottom:10px;
+    border-image: url(:/pic/1.png);/*下拉框背景，圆角图片*/
+}
+
+/* 下拉后，整个下拉窗体每项的样式 */
+#box_choosebox QAbstractItemView:item {
+    min-height: 26px;/*每项高度*/
+}
+
+#box_reword {
+    border: 1px solid gray;   /* 边框 */
+    border-radius:5px;   /* 圆角 */
+    padding: 0px 0px 0px 10px; /* 上内边距、右内边距、下内边距、左内边距 */
+    background-color:#ffde49;
+}
+
+/* 下拉后，整个下拉窗体样式 */
+#box_reword QAbstractItemView {
+    outline: 0px solid gray;   /* 选定项的虚框 */
+    border-radius:10px;   /* 圆角 */
+    padding-top:10px;    /*上下都留10px，是因为选中项是矩形，如果不留，移动到第一项和最后一项会变为直角，不好看*/
+    padding-bottom:10px;
+    border-image: url(:/pic/1.png);/*下拉框背景，圆角图片*/
+}
+
+/* 下拉后，整个下拉窗体每项的样式 */
+#box_reword QAbstractItemView:item {
+    min-height: 26px;/*每项高度*/
+}
+
+
+/*学习界面按钮*/
+#btn_know{
+    color:#80712d;
+    border: none;
+    background-color:#ffde49;
+    border-radius: 10px;
+}
+
+#btn_know:hover{
+    color:#80712d;
+    border: none;
+    background-color:#fdd72d;
+    border-radius: 10px;
+}
+
+#btn_know:pressed{
+    color:#80712d;
+    border: none;
+    background-color:#ffde49;
+    border-radius: 10px;
+}
+
+#btn_unknow{
+    color:#80712d;
+    border: none;
+    background-color:#ffde49;
+    border-radius:10px;
+}
+
+#btn_unknow:hover{
+    color:#80712d;
+    border: none;
+    background-color:#fdd72d;
+    border-radius: 10px;
+}
+
+#btn_unknow:pressed{
+    color:#80712d;
+    border: none;
+    background-color:#ffde49;
+    border-radius: 10px;
+}
+
+#btn_add{
+    color:#80712d;
+    border: none;
+    background-color:#ffde49;
+    border-radius:10px;
+}
+
+#btn_add:hover{
+    color:#80712d;
+    border: none;
+    background-color:#fdd72d;
+    border-radius: 10px;
+}
+
+#btn_add:pressed{
+    color:#80712d;
+    border: none;
+    background-color:#ffde49;
+    border-radius: 10px;
+}
+
+/*复习界面按钮*/
+#btn_last{
+    color:#80712d;
+    border: none;
+    background-color:#ffde49;
+    border-radius:10px;
+}
+
+#btn_last:hover{
+    color:#80712d;
+    border: none;
+    background-color:#fdd72d;
+    border-radius: 10px;
+}
+
+#btn_last:pressed{
+    color:#80712d;
+    border: none;
+    background-color:#ffde49;
+    border-radius: 10px;
+}
+#btn_next{
+    color:#80712d;
+    border: none;
+    background-color:#ffde49;
+    border-radius:10px;
+}
+
+#btn_next:hover{
+    color:#80712d;
+    border: none;
+    background-color:#fdd72d;
+    border-radius: 10px;
+}
+
+#btn_next:pressed{
+    color:#80712d;
+    border: none;
+    background-color:#ffde49;
+    border-radius: 10px;
+}
+
+#btn_return{
+    color:#80712d;
+    border: none;
+    background-color:#ffde49;
+    border-radius:10px;
+}
+
+#btn_return:hover{
+    color:#80712d;
+    border: none;
+    background-color:#fdd72d;
+    border-radius: 10px;
+}
+
+#btn_return:pressed{
+    color:#80712d;
+    border: none;
+    background-color:#ffde49;
+    border-radius: 10px;
+}
+
+#btn_complete{
+    color:#80712d;
+    border: none;
+    background-color:#ffde49;
+    border-radius:10px;
+}
+
+#btn_complete:hover{
+    color:#80712d;
+    border: none;
+    background-color:#fdd72d;
+    border-radius: 10px;
+}
+
+#btn_complete:pressed{
+    color:#80712d;
+    border: none;
+    background-color:#ffde49;
+    border-radius: 10px;
+}
+
+#btn_study{
+    color:#80712d;
+    border: none;
+    background-color:#ffde49;
+    border-radius: 10px;
+}
+
+#btn_study:hover{
+    color:#80712d;
+    border: none;
+    background-color:#fdd72d;
+    border-radius: 10px;
+}
+
+#btn_study:pressed{
+    color:#80712d;
+    border: none;
+    background-color:#ffde49;
+    border-radius: 10px;
+}
+
+#btn_review{
+    color:#80712d;
+    border: none;
+    background-color:#ffde49;
+    border-radius: 10px;
+}
+
+#btn_review:hover{
+    color:#80712d;
+    border: none;
+    background-color:#fdd72d;
+    border-radius: 10px;
+}
+
+#btn_review:pressed{
+    color:#80712d;
+    border: none;
+    background-color:#ffde49;
+    border-radius: 10px;
+}
+
+#btn_newword{
+    color:#80712d;
+    border: none;
+    background-color:#ffde49;
+    border-radius: 10px;
+}
+
+#btn_newword:hover{
+    color:#80712d;
+    border: none;
+    background-color:#fdd72d;
+    border-radius: 10px;
+}
+
+#btn_newword:pressed{
+    color:#80712d;
+    border: none;
+    background-color:#ffde49;
+    border-radius: 10px;
+}
+
+#btn_returnTostudycenter{
+    color:#80712d;
+    border: none;
+    background-color:#ffde49;
+    border-radius: 5px;
+}
+
+#btn_returnTostudycenter:hover{
+    color:#80712d;
+    border: none;
+    background-color:#fdd72d;
+    border-radius: 5px;
+}
+
+#btn_returnTostudycenter:pressed{
+    color:#80712d;
+    border: none;
+    background-color:#ffde49;
+    border-radius: 5px;
+}
+
+#btn_retTouserspace{
+    color:#80712d;
+    border: none;
+    background-color:#ffde49;
+    border-radius: 5px;
+}
+
+#btn_retTouserspace:hover{
+    color:#80712d;
+    border: none;
+    background-color:#fdd72d;
+    border-radius: 5px;
+}
+
+#btn_retTouserspace:pressed{
+    color:#80712d;
+    border: none;
+    background-color:#ffde49;
+    border-radius: 5px;
+}

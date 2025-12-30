@@ -1,0 +1,16 @@
+#ifndef VIEWDATA_H
+#define VIEWDATA_H
+
+enum VIEW
+{
+    ENROLL,
+    LOGIN,
+    USERSPACE,
+    STUDYCENTER,
+    CHANGEPASSWORD,
+    STUDYWORD,
+    USERREVIEW,
+    USERNEWWORD
+};
+
+#endif // VIEWDATA_H
