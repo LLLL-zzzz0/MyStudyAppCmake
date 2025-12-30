@@ -43,4 +43,3 @@ wordui/
 │   └── qss.qrc                           # 样式表资源  
 │  
 ├── main.cpp                     # 主程序入口  
-└── wordui.pro                   # Qt 项目文件  
